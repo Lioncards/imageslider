@@ -26,7 +26,7 @@ const page=()=>{
         </div>
 
 {/* ====================For smaller screens========================== */}
-        <div className="flex items-center bg-pink-300 justify-center h-svh sm:hidden">
+        <div className="flex items-center bg-pink-300 justify-center h-svh sm:hidden container">
           <Image src={aimage} className="w-fit"/>
         </div>
 
