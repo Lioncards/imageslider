@@ -26,8 +26,8 @@ const page=()=>{
         </div>
 
 {/* ====================For smaller screens========================== */}
-        <div className="flex items-center bg-pink-300 justify-center h-svh sm:hidden container">
-          <Image src={aimage} className="w-fit"/>
+        <div className="flex items-center bg-pink-300 justify-center h-svh sm:hidden">
+          <Image src={aimage} className=""/>
         </div>
 
         {/* Bro, the height h-screen and h-lvh is not supported in your mobile device, find a way to change the height to respond to it */}
