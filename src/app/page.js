@@ -4,7 +4,7 @@ import Image from "next/image"
 import React from "react";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
-import aimage from '@/Components/Images/GHmCag_bcAAwhMj.jpg'
+import aimage from '@/Components/Images/page_01.png'
 
 const page=()=>{
 
