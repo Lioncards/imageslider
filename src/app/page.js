@@ -8,11 +8,6 @@ import aimage from '@/Components/Images/page_01.png'
 
 const page=()=>{
   
-  const ref= useRef(null)
-
-  const scroll = (scrollOffset) => {
-    ref.current.scrollLeft += scrollOffset;
-  };
 
   return(
     <div>
