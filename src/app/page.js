@@ -5,52 +5,99 @@ import React, { useEffect, useRef } from "react";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { FaArrowCircleRight } from "react-icons/fa";
 import aimage from '@/Components/Images/page_01.png'
+import NewCSS from '@/Components/NewCSS.module.css'
+import { comicPages } from "@/Components/Imagesmodule";
+import abimage from '@/Components/Images/0087-001.png'
 
 const page=()=>{
-  
+
+  const twoPages= comicPages.slice(0,2)
 
   return(
     <div>
-        <div className="bg-pink-300 flex h-screen overflow-x-scroll overflow-y-hidden">
+        <div className="bg-pink-300 flex h-screen overflow-x-scroll overflow-y-hidden flex-row-reverse">
             <div className="flex items-center bg-pink-300 justify-center max-sm:hidden w-screen h-screen flex-shrink-0 relative">
 
-              <div className="bg-gradient-to-r from-stone-700 absolute left-0 inset-y-0">
+              <div className={NewCSS.leftsideShadow}>
                   <h1 className="opacity-0">pbfsnrsnrsnnrnrfnnrfhnfnsnem r</h1>
               </div>
 
               <div className="flex h-screen relative">
-                <button className="absolute inset-y-0 -left-20 peer-hover:visible">
+                <button className={NewCSS.leftsideButton}>
+                  <FaArrowCircleLeft className="size-10"/>
+                </button>
+
+                <Image src={aimage} className="w-fit" alt=""/>
+                <Image src={abimage} className="w-fit" alt=""/>
+
+                <button className={NewCSS.rightsideButton}>
+                  <FaArrowCircleRight className="size-10"/>
+                </button>
+              </div>
+
+              <div className={NewCSS.rightSideShadow}>
+                  <h1 className="opacity-0">pbfsnrsnrsnnrnrfnnrfhnfnsnem r</h1>
+              </div>
+                
+            </div>
+
+
+              <div className="flex items-center bg-pink-300 justify-center max-sm:hidden w-screen h-screen flex-shrink-0 relative">
+
+                <div className={NewCSS.leftsideShadow}>
+                    <h1 className="opacity-0">pbfsnrsnrsnnrnrfnnrfhnfnsnem r</h1>
+                </div>
+
+                <div className="flex h-screen relative">
+                  <button className={NewCSS.leftsideButton}>
+                    <FaArrowCircleLeft className="size-10"/>
+                  </button>
+
+                  <Image src={twoPages[1]} className="w-fit" alt=""/>
+                  <Image src={twoPages[0]} className="w-fit" alt=""/>
+
+                  <button className={NewCSS.rightsideButton}>
+                    <FaArrowCircleRight className="size-10"/>
+                  </button>
+                </div>
+
+                <div className={NewCSS.rightSideShadow}>
+                    <h1 className="opacity-0">pbfsnrsnrsnnrnrfnnrfhnfnsnem r</h1>
+                </div>
+                
+              </div>
+
+            
+          
+            
+
+
+            {/* <div className="flex items-center bg-pink-300 justify-center max-sm:hidden w-screen h-screen flex-shrink-0 relative">
+
+              <div className={NewCSS.leftsideShadow}>
+                  <h1 className="opacity-0">pbfsnrsnrsnnrnrfnnrfhnfnsnem r</h1>
+              </div>
+
+              <div className="flex h-screen relative">
+                <button className={NewCSS.leftsideButton}>
                   <FaArrowCircleLeft className="size-10"/>
                 </button>
 
                 <Image src={aimage} className="w-fit" alt=""/>
                 <Image src={aimage} className="w-fit" alt=""/>
 
-                <button className="absolute inset-y-0 -right-20">
+                <button className={NewCSS.rightsideButton}>
                   <FaArrowCircleRight className="size-10"/>
                 </button>
               </div>
 
-              <div className="bg-gradient-to-l from-stone-700 absolute right-0 inset-y-0">
+              <div className={NewCSS.rightSideShadow}>
                   <h1 className="opacity-0">pbfsnrsnrsnnrnrfnnrfhnfnsnem r</h1>
               </div>
                   
-            </div>
+            </div> */}
 
-            <div className="flex items-center bg-pink-300 justify-center max-sm:hidden w-screen h-screen flex-shrink-0 relative">
-              <button className="mr-5">
-                <FaArrowCircleLeft className="size-10"/>
-              </button>
-
-              <div className="flex h-screen">
-                <Image src={aimage} className="w-fit" alt=""/>
-                <Image src={aimage} className="w-fit" alt=""/>
-              </div>
-                
-              <button className="ml-5">
-                <FaArrowCircleRight className="size-10"/>
-              </button>
-            </div>
+            
         </div>
         
 

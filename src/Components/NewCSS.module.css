@@ -1,0 +1,35 @@
+
+
+.leftsideShadow{
+    background-image: linear-gradient(to right, #44403c, transparent);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+
+.rightSideShadow{
+    background-image: linear-gradient(to left, #44403c, transparent);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+
+.leftsideButton{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: -80px;
+}
+
+.leftsideButton:hover + .leftsideShadow{
+    display:block;   
+}
+
+.rightsideButton{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: -80px;   
+}
